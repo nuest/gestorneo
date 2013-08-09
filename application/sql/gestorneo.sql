@@ -16,13 +16,16 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Define table prefix here MANUALLY by search and replace, automatic table name concatenation is overkill.
+-- SET @table_prefix = 'gestorneo_test_';
+
+--
 -- Table structure for table `ci_sessions`
 --
-
 DROP TABLE IF EXISTS `ci_sessions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `ci_sessions` (
+CREATE TABLE CONCAT(@table_previx, `ci_sessions`) ( --`ci_sessions` (
   `session_id` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `ip_address` varchar(16) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `user_agent` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
