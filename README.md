@@ -17,7 +17,7 @@ Installation
 ### Prerequisites
 
 * PHP
-** required extensions (non-exhaustive list, just the ones that needed to be enabled manually): php_gettext
+	* required extensions (non-exhaustive list, just the ones that needed to be enabled manually): php_gettext
 
 ### Database Configuration
 
@@ -38,11 +38,11 @@ Development
 ### Tasks
 
 * create installation wizard (similar to Wordpress) that creates the database tables
-** automatically add table prefix to the table creation script (``gestorneo.sql``)
+	* automatically add table prefix to the table creation script (``gestorneo.sql``)
 
 ### Installation under Windows with WAMP
 
 * Apache > Alias directories > add a link such as ``http://localhost/gestorneo/ >> <local>\GitHub\gestorneo``
 * Database
-** https://www.youtube.com/watch?v=DqEdTWjSnAQ
+	* https://www.youtube.com/watch?v=DqEdTWjSnAQ
 
